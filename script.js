@@ -20,6 +20,7 @@ document
 
       // Clear the input field
       taskInput.value = "";
+      taskInput.focus();
     }
   });
 
