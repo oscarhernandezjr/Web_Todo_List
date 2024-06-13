@@ -1,47 +1,45 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>To-Do List App</title>
-
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
-
   <body>
     <div class="container">
       <h1>To-Do List</h1>
-
-      <form id="todoForm">
-        <input
-          type="text"
-          id="todoInput"
-          name="todoInput"
-          placeholder="Enter a new task"
-        />
-        <button type="button" onclick="addTask()">Add Task</button>
+      <form id="todo-form">
+        <input type="text" placeholder="Enter a new task!" />
+        <button id="Add Task" type="submit">Add Task</button>
       </form>
-
-      <div id="studyTasks" class="task-box">
-        <h3>Study for homework</h3>
-
-        <button type="button">Remove</button>
-      </div>
-
-      <div id="cleanTasks" class="task-box">
-        <h3>Clean Room</h3>
-
-        <button type="button">Remove</button>
-      </div>
-
-      <div id="washTasks" class="task-box">
-        <h3>Wash Dishes</h3>
-
-        <button type="button">Remove</button>
-      </div>
+      <ul id="todo-list">
+        <li>
+          <div class="todo-item">
+            <span>Eat Breakfast</span>
+            <button class="remove" type="button">Remove</button>
+          </div>
+        </li>
+        <li>
+          <div class="todo-item">
+            <span>Feed the turtles</span>
+            <button class="remove" type="button">Remove</button>
+          </div>
+        </li>
+        <li>
+          <div class="todo-item">
+            <span>Go to class</span>
+            <button class="remove" type="button">Remove</button>
+          </div>
+        </li>
+        <li>
+          <div class="todo-item">
+            <span>Pick up the dog</span>
+            <button class="remove" type="button">Remove</button>
+          </div>
+        </li>
+      </ul>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
